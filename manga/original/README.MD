@@ -2,6 +2,7 @@ This is the original version of the scraper created to scrape mangas from mangar
 Written for Python 3 and will not work in Python 2 because of package name differences<br>
 
 Usage (in a bash terminal):<br>
+    
     python3 manga.py url
 
 where url will be a url in the format of "https://www.mangareader.net/naruto"<br>
