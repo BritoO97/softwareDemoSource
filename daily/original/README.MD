@@ -10,25 +10,25 @@ The daily report will consists of 3 sections:<br>
 Usage:<br>
     The scripts are never ran directly. Instead a handler bash script is used<br>
 
-#!/bin/bash
+    #!/bin/bash
 
-location=$(dirname $0)<br>
-cd $location<br>
+    location=$(dirname $0)<br>
+    cd $location<br>
 
-rm results<br>
-echo "starting" >> log<br>
+    rm results<br>
+    echo "starting" >> log<br>
 
-echo "Table Of Contents" >> results<br>
-echo "   1. Weather" >> results<br>
-echo "   2. Steam" >> results<br>
-echo "   3. GOG" >> results<br>
-echo "" >> results<br>
+    echo "Table Of Contents" >> results<br>
+    echo "   1. Weather" >> results<br>
+    echo "   2. Steam" >> results<br>
+    echo "   3. GOG" >> results<br>
+    echo "" >> results<br>
 
-/usr/bin/python3 weather.py<br>
-/usr/bin/python3 steamScraper.py<br>
-/usr/bin/python3 gogScraper.py<br>
-/usr/bin/python3 emailer.py<br>
-echo "ending" >> log<br>
+    /usr/bin/python3 weather.py<br>
+    /usr/bin/python3 steamScraper.py<br>
+    /usr/bin/python3 gogScraper.py<br>
+    /usr/bin/python3 emailer.py<br>
+    echo "ending" >> log<br>
 
 The runner script changes the PWD to the correct location, removes the previous day's results, echo's a quick table of contents to the results file and calls each of the scrapers in turn<br>
 
