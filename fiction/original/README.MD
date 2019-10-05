@@ -1,5 +1,5 @@
 This is the original version of the scraper created to scrape fanfictions from fanfiction.net to be able to archive them for later reading<br>
-Written for Python 3.6 or 3.7 and will not work in earlier verison due to the request_html package<br>
+Written for Python 3.6 or 3.7 and will not work in earlier version due to the request_html package<br>
 
 Usage (in a bash terminal):<br>
 
