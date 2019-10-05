@@ -12,27 +12,27 @@ Usage:<br>
 
     #!/bin/bash
 
-    location=$(dirname $0)<br>
-    cd $location<br>
+    location=$(dirname $0)
+    cd $location
 
-    rm results<br>
-    echo "starting" >> log<br>
+    rm results
+    echo "starting" >> log
 
-    echo "Table Of Contents" >> results<br>
-    echo "   1. Weather" >> results<br>
-    echo "   2. Steam" >> results<br>
-    echo "   3. GOG" >> results<br>
-    echo "" >> results<br>
+    echo "Table Of Contents" >> results
+    echo "   1. Weather" >> results
+    echo "   2. Steam" >> results
+    echo "   3. GOG" >> results
+    echo "" >> results
 
-    /usr/bin/python3 weather.py<br>
-    /usr/bin/python3 steamScraper.py<br>
-    /usr/bin/python3 gogScraper.py<br>
-    /usr/bin/python3 emailer.py<br>
-    echo "ending" >> log<br>
+    /usr/bin/python3 weather.py
+    /usr/bin/python3 steamScraper.py
+    /usr/bin/python3 gogScraper.py
+    /usr/bin/python3 emailer.py
+    echo "ending" >> log
 
 The runner script changes the PWD to the correct location, removes the previous day's results, echo's a quick table of contents to the results file and calls each of the scrapers in turn<br>
 
 Finaly the runner script is set to run every dat a 8:00 AM Eastern Time using a cronjob (0 8 * * * /bin/bash ~/TestScraper/runner)<br>
 
-Output:<br><br>
+Output:<br>
     There is no direct output, intead an email is sent to whoever is listed in the to variable of the emailer script
