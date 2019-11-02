@@ -34,7 +34,7 @@ for issue in range(1, (rows + 1)):
     req = Request(issUrl, headers={'User-Agent': 'Mozilla/5.0'})
     issueHTML = urlopen(req).read()
 
-	# build the BeautifulSoup objetc
+	# build the BeautifulSoup object
     issueSoup = soup(issueHTML, 'html.parser')
 
 	# find out how many pages exists on this chapter/issue by using the pageMenu dropdown and how many options there are to select from

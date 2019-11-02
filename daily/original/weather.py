@@ -28,7 +28,7 @@ pageSoup = soup(pageHTML, "html.parser")
 # the first table row will contain the forecast for the day in which the script is ran
 row = pageSoup.findAll("tr", {"class":"clickable closed"})[0]
 
-# reteieve all of the td tags that contain the data needed
+# retrieve all of the td tags that contain the data needed
 content = row.findAll("td")
 
 # retrieve the wanted data from the various td tags
@@ -45,7 +45,7 @@ prec = content[4].div.findAll("span")[1].span.text
 
 hum = content[6].span.span.text
 
-# open the results file in append moda
+# open the results file in append mode
 f = open(filename, "a")
 
 # write the data out to a file with some formating
