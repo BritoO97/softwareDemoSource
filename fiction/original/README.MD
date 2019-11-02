@@ -1,9 +1,9 @@
 This is the original version of the scraper created to scrape fanfictions from fanfiction.net to be able to archive them for later reading<br>
-Written for Python 3.6 or 3.7 and will not work in earlier verison due to the request_html package<br>
+Written for Python 3.6 or 3.7 and will not work in earlier version due to the request_html package<br>
 
 Usage (in a bash terminal):<br>
 
-	python3 fiction.py url
+	python3.7 fiction.py url
 
 where url will be a url in the format of "https://www.fanfiction.net/s/2630300/1/You-Did-What" or "https://www.fanfiction.net/s/2630300/1" or "https://www.fanfiction.net/s/2630300"<br>
 The first number after the 's' must be part of the URL. Anything after is optional since the script will rebuild the URL down to "https://www.fanfiction.net/s/2630300"<br>

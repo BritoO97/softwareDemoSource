@@ -1,6 +1,6 @@
 This is the original version of the scraper created to scrape a daily report froma variety of websites<br>
 Written for Python 3 and will not work in Python 2 because of package name differences<br>
-Written during my last year of college as a way to introduce myself to linux environments and because i like to keep on top of the latestt game releases and special discounts<br>
+Written during my last year of college as a way to introduce myself to linux environments and because i like to keep on top of the latest game releases and special discounts<br>
 
 The daily report will consists of 3 sections:<br>
     Weather forecast for the day<br>
