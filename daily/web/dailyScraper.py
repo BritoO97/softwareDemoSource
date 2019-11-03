@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup as soup
 from urllib2 import Request, urlopen
 import json
-#import codec
 from io import open
 import smtplib
 from email.mime.text import MIMEText
